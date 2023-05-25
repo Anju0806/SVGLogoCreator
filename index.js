@@ -95,7 +95,6 @@ function init() {
                 case 'triangle':
                     const triangle = new Triangle(answers);
                     triangle.saveSvgHeader();
-                    triangle.saveSvgHeader();
                     triangle.addSvgTriangle();
                     triangle.saveSvgText();
                     break;

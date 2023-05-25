@@ -55,4 +55,4 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 
 ---
-Thank you for using the SVGLogoCreator! We hope you enjoy creating customized logos.
+Thank you for using the SVGLogoCreator! Hope you enjoy creating customized logos.
