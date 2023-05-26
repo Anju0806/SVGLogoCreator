@@ -23,7 +23,6 @@ const questions = [
         validate: function (value) {
             // Regular expression for color keywords
             const colorKeywordRegex = /^(red|blue|green|yellow|orange|purple|pink|black|white|gray)$/i;
-
             // Regular expression for hexadecimal color codes
             const hexCodeRegex = /^#([0-9A-F]{3}){1,2}$/i;
 
@@ -54,26 +53,17 @@ const questions = [
         validate: function (value) {
             // Regular expression for color keywords
             const colorKeywordRegex = /^(red|blue|green|yellow|orange|purple|pink|black|white|gray)$/i;
-
             // Regular expression for hexadecimal color codes
             const hexCodeRegex = /^#([0-9A-F]{3}){1,2}$/i;
-
             if (value.match(colorKeywordRegex) || value.match(hexCodeRegex)) {
-                return true; // Valid color input
+                return true; 
             } else {
-                return 'Please enter a valid color'; // Invalid color input
+                return 'Please enter a valid color'; 
             }
         }
     },
 
 ];
-/* //function to create svg file
-function writeToFile(data) {
-    fs.writeFile('logo.svg', data,
-        (err) => err ? console.error(err) : console.log('Generated logo.svg!!')
-    );
-}
- */
 
 //function to initialize app
 function init() {
@@ -90,22 +80,15 @@ function init() {
                     shape = new Circle();
                     break;
                 case 'triangle':
-                    shape = new Triangle(answers);
+                    shape = new Triangle();
                     break;
                 case 'square':
-                    shape = new Square(answers);
+                    shape = new Square();
                     break;
                 default:
                     break;
             }
-            /*  shape.setShape(answers.shape,answers.shapecolor);
-             shape.setText(answers.text,answers.textcolor);
-             shape.saveSvgHeader();
-             shape.addSvgData();
-             shape.saveSvgText();
-             console.log(" Generated logo.svg successfully..") */
-
-            shape.setShape(answers.shape, answers.shapecolor)
+            shape.setShapeColor(answers.shapecolor)
                 .then(() => shape.setText(answers.text, answers.textcolor))
                 .then(() => shape.saveSvgHeader())
                 .then(() => shape.addSvgData())
@@ -116,8 +99,6 @@ function init() {
                 .catch((error) => {
                     console.error("An error occurred:", error);
                 });
-
-
         })
         .catch((error) => {
             console.log('An error occurred:', error);
