@@ -12,7 +12,7 @@ This command-line application allows you to generate custom SVG logos by providi
 ## Walkthrough Video
 
 To see the functionality of the SVGLogoCreator and how it passes all the tests, please watch the following walkthrough video:
-[Link to Walkthrough Video](video link goes here-----EDIT LATER)
+[Link to Walkthrough Video] (https://watch.screencastify.com/v/kYWSVwNQsQPwNlaP7NlP)
 
 
 ## Usage
